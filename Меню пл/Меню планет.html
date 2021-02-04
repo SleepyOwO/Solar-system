@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Планетки</title>
+        <link rel="SHORTCUT ICON" href="pics/ico.jpg" type="image/x-icon">
+        <style>
+            body{
+                background-attachment: fixed;
+                background-image: url(https://thoughtcatalog.com/wp-content/uploads/2017/12/jeremy-perkins-390608.jpg);
+                background-size: 100vw;
+            }
+            details{
+                cursor: pointer;
+                width: 20vw;
+                float: left;
+                margin-left: 10vw;
+            }
+            summary{
+                outline: none;
+                text-align: center;
+            }
+            details h1{
+                background-color: rgba(153, 50, 204, 0.8);
+                border-radius: 10px;
+                color: rgb(144, 198, 216);
+                text-align: center;
+                font-size: large;
+                width: 20vw;
+                margin-top: 5px;
+                position: absolute;
+            }
+            details summary::-webkit-details-marker {
+                display: none
+            }
+            nav{
+            background-color: rgba(153, 50, 204, 0.7);
+            border-radius: 10px;
+            font-size: xx-large;
+            margin: auto;
+            margin-bottom: 25px;
+            text-align: center;
+            width: fit-content;
+            }
+            a{
+            margin: 25px;
+            text-decoration: none;
+            }
+            p{
+                cursor: pointer;
+                text-align: center;
+                margin-top: auto;
+                color: rgb(144, 198, 216);
+                width: 20vw;
+                font-size: xx-large;
+                margin-top: 20px;
+            }
+            img{
+                height: 15vw;
+                width: 15vw;
+            }
+        </style>
+    </head>
+    <body link="#90c6d8" alink="whitesmoke" vlink="#90c6d8">
+        <header>
+            <nav>
+                <a href="../Косьмось V2.html"> Главная</a> 
+                <a href="https://vk.com/sleepy_owo">Поддержка &#9993;</a>
+            </nav>
+        </header>
+        <section style="margin-top: 50px;">
+            <details><summary><img src="pics/Земля.png"><p>Земля</p></summary>
+                <h1>Земля — одна из планет, которые вращаются вокруг Солнца. Она почти в 110 раз меньше этого светила по диаметру.</h1>
+            </details>
+            <details><summary><img src="pics/Марс.png"><p>Марс</p></summary>
+                <h1>Марс — называют красной планетой из-за ржаво-красного цвета его поверхности. Температура на Марсе очень низкая и в дневное время суток, и в ночное.</h1>
+            </details>
+            <details><summary><img src="pics/Венера.png"><p>Венера</p></summary>
+                <h1>Венера — планета, которую часто называют утренней или вечерней звездой. Поверхность Венеры представляет собой равнину, усыпанную камнями и обломками скал. На Венере нет ни воды, ни жизни.</h1>
+            </details>
+            <details style="margin-left: 25vw;"><summary><img src="pics/Сатурн.png"><p>Сатурн</p></summary>
+                <h1>Сатурн — планета, которая по размерам чуть меньше Юпитера. Внешне Сатурн отличается от остальных планет тем, что окружен множеством светящихся колец.</h1>
+            </details>
+            <details><summary><img src="pics/Юпитер.png"><p>Юпитер</p></summary>
+                <h1>Юпитер — самая большая планета Солнечной системы. Она больше Земли в 1000 раз. Юпитер находится на огромном расстоянии от Солнца, отчего температура на этом газовом гиганте жоло -140°С.</h1>
+            </details>
+            <details><summary><img src="pics/Меркурий.png"><p>Меркурий</p></summary>
+                <h1>Меркурий — ближайшая к Солнцу планета. Ни воды, ни воздуха на Меркурии нет. Из-за того что Меркурий так близок к светилу, дневная температура на этой планете почти +450°С.</h1>
+            </details>
+            <details><summary><img src="pics/Нептун.png"><p>Нептун</p></summary>
+                <h1>Нептун — по виду и размерам похож на Уран. Он сильно сжат и быстро вращается. Нептун удален от Солнца на 2,8 миллиардов километров.</h1>
+            </details>
+            <details><summary><img src="pics/Уран.png"><p>Уран</p></summary>
+                <h1>Уран — удален от Солнца на расстояние в 19 раз большее, чем Земля, поэтому получает очень мало тепла.</h1>
+            </details>
+            <script>
+                function onToggle(event) {
+                  if (event.target.open) {
+                    document.querySelectorAll("details[open]").forEach((el) => {
+                      if (el === event.target) {
+                        return;
+                      }
+                      el.open = false;
+                    });
+                  }
+                }
+                document.querySelectorAll("details").forEach((el) => el.addEventListener("toggle", onToggle));
+            </script>
+        </section>
+    </body>
+</html>
